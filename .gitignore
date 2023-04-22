@@ -32,4 +32,4 @@ build/
 ### VS Code ###
 .vscode/
 
-spring.datasource.password=sk9540
+application-secret.properties
