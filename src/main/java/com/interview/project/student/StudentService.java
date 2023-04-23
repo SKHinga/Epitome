@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.time.LocalDate;
-import java.time.Month;
+//import java.time.LocalDate;
+//import java.time.Month;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -40,7 +40,7 @@ public class StudentService {
        studentRepository.deleteById(studentId);
     }
 
-//    http://localhost:8080/api/v1/student/1?name=badeh&email=badeh.dowy@gmail.com
+//    http://localhost:8080/api/v1/student/1?name=Brian&email=brian.dowy@gmail.com
     @Transactional
     public void updateStudent(Long studentId, String name, String email) {
         Student student = studentRepository.findById(studentId).orElseThrow(() ->
