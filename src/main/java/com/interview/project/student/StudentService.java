@@ -40,6 +40,7 @@ public class StudentService {
        studentRepository.deleteById(studentId);
     }
 
+//    http://localhost:8080/api/v1/student/1?name=badeh&email=badeh.dowy@gmail.com
     @Transactional
     public void updateStudent(Long studentId, String name, String email) {
         Student student = studentRepository.findById(studentId).orElseThrow(() ->
